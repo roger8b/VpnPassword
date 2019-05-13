@@ -71,5 +71,5 @@ jar {
 }
 
 shadowJar {
-    version = null
+    version = "1.0.0"
 }
