@@ -31,7 +31,7 @@ class HomeView : View("Gerador de senha para VPN"), HomeContract.View {
         addClass(homeScreen)
         fieldset(title, labelPosition = Orientation.VERTICAL) {
             field("Chave de Segurança") {
-                textfield(model.securityKey) {
+                passwordfield(model.securityKey) {
                     bind(model.securityKey)
                     required()
                     whenDocked { requestFocus() }
