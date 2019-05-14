@@ -1,3 +1,5 @@
+- Link para download da ultima versão: [VpnPassword.jar](https://github.com/roger8b/VpnPassword/blob/master/current/VpnPassword-1.0.0-all.jar)
+
 # VpnPassword
 
 Pequena aplicação para gerar a senha da Vpn utilizando um gerador de senha OTP.
