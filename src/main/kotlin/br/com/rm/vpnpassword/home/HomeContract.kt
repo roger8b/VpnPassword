@@ -10,6 +10,7 @@ interface HomeContract {
     interface Presenter {
         fun copyVpnPasswordToClipBoard(value: String?)
         fun getVpnPassword(secret: String, password: String): String?
+        fun openGithub()
 
     }
 

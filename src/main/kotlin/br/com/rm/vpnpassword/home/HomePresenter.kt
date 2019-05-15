@@ -2,6 +2,12 @@ package br.com.rm.vpnpassword.home
 
 import br.com.rm.vpnpassword.helpers.OtpHelper
 import br.com.rm.vpnpassword.helpers.PreferencesHelper
+import javafx.scene.control.Hyperlink
+import java.net.URL
+import javafx.scene.web.WebEngine
+import javafx.scene.web.WebView
+
+
 
 class HomePresenter(private val view: HomeContract.View) : HomeContract.Presenter {
 
@@ -40,6 +46,14 @@ class HomePresenter(private val view: HomeContract.View) : HomeContract.Presente
     override fun copyVpnPasswordToClipBoard(value: String?) {
         interactor?.sendToClipboard(value)
         view.showMessagePasswordCopiedToClipboard()
+    }
+
+    override fun openGithub() {
+        val rt = Runtime.getRuntime()
+        val url = "https://github.com/roger8b/VpnPassword"
+        rt.exec("rundll32 url.dll,FileProtocolHandler $url")
+
+
     }
 }
 
